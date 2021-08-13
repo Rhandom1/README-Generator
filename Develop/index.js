@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 //Prompts:
@@ -50,10 +51,16 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What command should be run to install any dependencies?',
+        message: 'What dependencies are being used?',
         name: 'dependencies',
+    },
+    {
+        type: 'input',
+        message: 'How are the dependencies installed?',
+        name: 'installation',
         default: 'npm 1'
     },
+
     {
         type: 'input',
         message: 'What command should be run for any testing?',
@@ -63,31 +70,21 @@ const questions = [
 ];
 // console.log(questions);
 
-inquirer.prompt(questions).then((response) => {
-    const gitLink = `https://api.github.com/users/${response.userName}`;
-    console.log(gitLink);
-    let returnFile;
-
-    returnFile = {
-
-    }
-    response.license.array.forEach(license => {
-        returnFile += `${license}`;
-        
-    });
-
-    writeToFile(returnFile);
-})
-
 // TODO: Create a function to write README file
-function writeToFile(returnFile) {
-    fs,fs.writeFile('README.md', returnFile, (err)=> {
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err)=> {
         err ? console.log (err) : console.log("Answers returned!")
     })
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((response) => {
+        
+    
+        writeToFile("README.md", generateMarkdown(response));
+    })
+}
 
 // Function call to initialize app
 init();
