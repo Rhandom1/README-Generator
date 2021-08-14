@@ -15,13 +15,14 @@ function generateMarkdown(data) {
       <li>
         <a href="#about-the-project">Usage</a>
         <ul>
+          <li><a href="#description">Description</a></li>
           <li><a href="#built-with">Dependencies</a></li>
         </ul>
       </li>
       <li>
         <a href="#getting-started">Testing</a>
         <ul>
-          <li><a href="#prerequisites">Questions</a></li>
+          <li><a href="#test">Test</a></li>
           <li><a href="#installation">Installation</a></li>
         </ul>
       </li>  
