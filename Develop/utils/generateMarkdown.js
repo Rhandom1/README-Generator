@@ -1,3 +1,34 @@
+
+
+function renderBadge(license) {
+  
+  if (license === "Unlicensed"){
+    return '';
+  }else if (license === 'MIT') {
+    return `![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)`;
+  }else if (license === 'APACHE 2.0') {
+      return `![License: ${license}](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
+  }else if (license === 'GPL 3.0') {
+    return `![License: ${license}](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+  }else  if (license === 'BSD 3') {
+      return `![License: ${license}](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`;
+  }
+}
+
+// function renderBadgeUrl(license) {
+//   if (license === "Unlicensed"){
+//     return '';
+//   }else if (license === 'MIT'){
+//     return 'https://opensource.org/licenses/MIT';
+//   }else if (license === 'APACHE 2.0'){
+//     return 'https://opensource.org/licenses/Apache-2.0';
+//   }else if (license === 'GPL 3.0'){
+//     return 'https://www.gnu.org/licenses/gpl-3.0';
+//   }else if (license === 'BSD 3'){
+//     return 'https://opensource.org/licenses/BSD-3-Clause';
+//   }
+// }
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -6,7 +37,8 @@ function generateMarkdown(data) {
   [![Forks][forks-shield]][forks-url]
   [![Stargazers][stars-shield]][stars-url]
   [![Issues][issues-shield]][issues-url]
-  [![MIT License][license-shield]][license-url]
+  ${renderBadge(data.license)}
+  
 
   <details open="open">
     <summary>Table of Contents</summary>
@@ -70,12 +102,15 @@ function generateMarkdown(data) {
   [stars-url]: https://github.com/${data.userName}/Best-README-Template/stargazers
   [issues-shield]: https://img.shields.io/github/issues/${data.userName}/${data.title}.svg?style=for-the-badge
   [issues-url]: https://github.com/${data.userName}/Best-README-Template/issues
-  [license-shield]: https://img.shields.io/github/license/${data.userName}/${data.title}.svg?style=for-the-badge
-  [license-url]: https://github.com/${data.userName}/Best-README-Template/blob/master/LICENSE.txt
+  
   [product-screenshot]: images/screenshot.png
   
 
 `;
 }
 
+
+
+renderBadge();
 module.exports = generateMarkdown;
+

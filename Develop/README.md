@@ -4,7 +4,8 @@
   [![Forks][forks-shield]][forks-url]
   [![Stargazers][stars-shield]][stars-url]
   [![Issues][issues-shield]][issues-url]
-  [![MIT License][license-shield]][license-url]
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  
 
   <details open="open">
     <summary>Table of Contents</summary>
@@ -32,13 +33,14 @@
   
   
   ## Description
-  Creates a decent README file for your projects.
+  It creates a README for your project.
+  ![README preview](/ReadMeGen.png)
   
   ### Dependencies
   inquirer
   
   ## Usage
-  Answer the questions and a README file will be created in your folder.
+  Answer the questions to auto generate a README.md file.
   
   ### Testing
   npm test
@@ -47,7 +49,7 @@
   npm 1
 
   ## Contributing
-  See contributor details.
+  See contribution links.
   
   ## License
   MIT
@@ -56,7 +58,7 @@
   
   Your Name - Rhandom1
   
-  Email: shawnmc820@gmail.com
+  Email: rhandomone@gmail.com
   
   <!-- MARKDOWN LINKS & IMAGES -->
   <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -68,8 +70,7 @@
   [stars-url]: https://github.com/Rhandom1/Best-README-Template/stargazers
   [issues-shield]: https://img.shields.io/github/issues/Rhandom1/README-Generator.svg?style=for-the-badge
   [issues-url]: https://github.com/Rhandom1/Best-README-Template/issues
-  [license-shield]: https://img.shields.io/github/license/Rhandom1/README-Generator.svg?style=for-the-badge
-  [license-url]: https://github.com/Rhandom1/Best-README-Template/blob/master/LICENSE.txt
+  
   [product-screenshot]: images/screenshot.png
   
 
