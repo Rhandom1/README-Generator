@@ -34,6 +34,8 @@
   
   ## Description
   An app to create a README file for your project. Built in node, the app will intake the information you provide and generate a README file that can include license information, project description, etc.
+
+  https://github.com/Rhandom1/Team-Profile-Generator
   
   ### Dependencies
   inquirer
@@ -58,6 +60,8 @@
   ## Contact
   
   Your Name - Rhandom1
+
+  https://github.com/Rhandom1
   
   Email: shawnmc820@gmail.com
   
