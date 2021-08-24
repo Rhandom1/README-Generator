@@ -4,7 +4,7 @@
   [![Forks][forks-shield]][forks-url]
   [![Stargazers][stars-shield]][stars-url]
   [![Issues][issues-shield]][issues-url]
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  
   
 
   <details open="open">
@@ -33,14 +33,15 @@
   
   
   ## Description
-  It creates a README for your project.
-  ![README preview](/ReadMeGen.png)
+  An app to create a README file for your project. Built in node, the app will intake the information you provide and generate a README file that can include license information, project description, etc.
   
   ### Dependencies
   inquirer
   
   ## Usage
-  Answer the questions to auto generate a README.md file.
+  You will need to provide case sensitive information to generate the data.
+
+  ![Video walkthrough](https://drive.google.com/file/d/15WGuwEbutHsRC-QE5s-Mzxg9IL5xrT8O/view)
   
   ### Testing
   npm test
@@ -49,16 +50,16 @@
   npm 1
 
   ## Contributing
-  See contribution links.
+  N/A
   
   ## License
-  MIT
+  Unlicensed
 
   ## Contact
   
   Your Name - Rhandom1
   
-  Email: rhandomone@gmail.com
+  Email: shawnmc820@gmail.com
   
   <!-- MARKDOWN LINKS & IMAGES -->
   <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
