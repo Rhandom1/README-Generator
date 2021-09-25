@@ -33,17 +33,13 @@
   
   
   ## Description
-  An app to create a README file for your project. Built in node, the app will intake the information you provide and generate a README file that can include license information, project description, etc.
-
-  https://github.com/Rhandom1/Team-Profile-Generator
+  A database tracker for adding new departments, roles, or employees. A user can also view departments, roles, or employees for tracking purposes. Finally, a user has the ability to update employees as well.
   
   ### Dependencies
-  inquirer
+   inquirer, mysql2, console.table
   
   ## Usage
-  You will need to provide case sensitive information to generate the data.
-
-  ![Video walkthrough](https://drive.google.com/file/d/15WGuwEbutHsRC-QE5s-Mzxg9IL5xrT8O/view)
+  should start the db before running express.
   
   ### Testing
   npm test
@@ -52,7 +48,7 @@
   npm 1
 
   ## Contributing
-  N/A
+  Contact me for contributions
   
   ## License
   Unlicensed
@@ -60,20 +56,18 @@
   ## Contact
   
   Your Name - Rhandom1
-
-  https://github.com/Rhandom1
   
   Email: shawnmc820@gmail.com
   
   <!-- MARKDOWN LINKS & IMAGES -->
   <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-  [contributors-shield]: https://img.shields.io/github/contributors/Rhandom1/README-Generator.svg?style=for-the-badge
+  [contributors-shield]: https://img.shields.io/github/contributors/Rhandom1/Employee_Management_System.svg?style=for-the-badge
   [contributors-url]: https://github.com/Rhandom1/Best-README-Template/graphs/contributors
-  [forks-shield]: https://img.shields.io/github/forks/Rhandom1/README-Generator.svg?style=for-the-badge
+  [forks-shield]: https://img.shields.io/github/forks/Rhandom1/Employee_Management_System.svg?style=for-the-badge
   [forks-url]: https://github.com/Rhandom1/Best-README-Template/network/members
-  [stars-shield]: https://img.shields.io/github/stars/Rhandom1/README-Generator.svg?style=for-the-badge
+  [stars-shield]: https://img.shields.io/github/stars/Rhandom1/Employee_Management_System.svg?style=for-the-badge
   [stars-url]: https://github.com/Rhandom1/Best-README-Template/stargazers
-  [issues-shield]: https://img.shields.io/github/issues/Rhandom1/README-Generator.svg?style=for-the-badge
+  [issues-shield]: https://img.shields.io/github/issues/Rhandom1/Employee_Management_System.svg?style=for-the-badge
   [issues-url]: https://github.com/Rhandom1/Best-README-Template/issues
   
   [product-screenshot]: images/screenshot.png
